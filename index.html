@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body>
+    <div id="conteudo">
+    <h1>Tabuada:</h1>
+    <p>Digite um número: <input type="number" name="valor" id="valor"></p>
+    <form>
+        <label>Escolha o operador que deseja: </label>
+        <select name ="operador" id="operadores" required="required">
+            <option value="vazio" id="vazio">Escolha um operador</option>
+            <option value="+" id="som">+</option>
+            <option value="-" id="sub">-</option>
+            <option value="x" id="mult">x</option>
+            <option value="/" id="div">/</option>
+        </select>
+
+        <p><input type="button" value="Gerar tabuada" onclick="montarTabuada()" id="btn"></p>
+
+        <div id="resultado">
+            Resultado: <br/>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
