@@ -11,8 +11,8 @@ function montarTabuada() {
     res.innerHTML = 'Resultado: </br>'
 
     // Mensagem de ERRO
-    if (valor1.value <= 0) {
-        alert("[ERRO] Digite um valor positivo!")
+    if (valor1.value.length == 0) {
+        alert("[ERRO] Digite um número!")
         return {}
     }
 
